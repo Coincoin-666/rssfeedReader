@@ -1,1 +1,29 @@
-/*  */
+/* Color Schemes */
+
+/* Playstation */
+.blue_PS_T {
+    color: #003087;
+}
+
+.blue_PS_BG {
+    background-color: #003087;
+}
+
+/* Also White & Black but irrelevant to add here */
+
+/* XBox */
+.black_XB_T {
+    color: #161616;
+}
+
+.black_XB_BG {
+    background-color: #161616;
+}
+
+.green_XB_T {
+    color: #007f00
+}
+
+.green_XB_BG {
+    background-color: #007f00
+}

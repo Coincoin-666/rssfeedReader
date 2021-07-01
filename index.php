@@ -10,40 +10,32 @@ session_start();
 <main class="container lg-w-60 sm-w-100">
 
     <!-- Carousel -->
-    <div class="row">
+    <section class="row">
         <div id="lastNewsCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/img/404.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p>First slide label</p>
-                        <p>Some representative placeholder content for the first slide.</p>
+                    <div id="carouselThumb_01">
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/404.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p>Second slide label</p>
-                        <p>Some representative placeholder content for the second slide.</p>
+                    <div id="carouselThumb_02">
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/404.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p>Third slide label</p>
-                        <p>Some representative placeholder content for the third slide.</p>
+                    <div id="carouselThumb_03">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- END Carousel -->
 
     <!-- News Feed -->
 
     <div class="container">
-        <section class="col-lg-4 col-sm-12 justify-content-center">
-            <article class="card mb-3">
+        <section class="justify-content-center">
+            <article class="card mb-3" id="actus_JV_card_01">
+                <div class="card-header blue_PS_BG"></div>
                 <div class="card-body">
                     <!-- Là, à mon avis, faudra un if(isset(favorite)echo$favorite else actusmachintruc) -->
                     <p class="card-title"><?= $actusJV_TITLE_firstThumb ?></p>
@@ -51,110 +43,34 @@ session_start();
                     <p class="card-text"><?= $actusJV_TEXT_firstThumb ?></p>
                 </div>
             </article>
-            <article class="card mb-3">
+            <article class="card mb-3" id="actus_JV_card_02">
+                <div class="card-header green_XB_BG"></div>
                 <div class="card-body">
-                    <p class="card-title"><?= $actusJV_TITLE_firstThumb ?></p>
-                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_firstThumb ?></p>
-                    <p class="card-text"><?= $actusJV_TEXT_firstThumb ?></p>
+                    <p class="card-title"><?= $actusJV_TITLE_secondThumb ?></p>
+                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_secondThumb ?></p>
+                    <p class="card-text"><?= $actusJV_TEXT_secondThumb ?></p>
+                </div>
+            </article>
+            <article class="card mb-3" id="actus_JV_card_03">
+                <div class="card-header black_XB_BG"></div>
+                <div class="card-body">
+                    <p class="card-title"><?= $actusJV_TITLE_thirdThumb ?></p>
+                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_thirdThumb ?></p>
+                    <p class="card-text"><?= $actusJV_TEXT_thirdThumb ?></p>
                 </div>
             </article>
             <article class="card mb-3">
                 <div class="card-body">
-                    <p class="card-title"><?= $actusJV_TITLE_firstThumb ?></p>
-                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_firstThumb ?></p>
-                    <p class="card-text"><?= $actusJV_TEXT_firstThumb ?></p>
+                    <p class="card-title"><?= $actusJV_TITLE_fourthThumb ?></p>
+                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_fourthThumb ?></p>
+                    <p class="card-text"><?= $actusJV_TEXT_fourthThumb ?></p>
                 </div>
             </article>
             <article class="card mb-3">
                 <div class="card-body">
-                    <p class="card-title"><?= $actusJV_TITLE_firstThumb ?></p>
-                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_firstThumb ?></p>
-                    <p class="card-text"><?= $actusJV_TEXT_firstThumb ?></p>
-                </div>
-            </article>
-            <article class="card mb-3">
-                <div class="card-body">
-                    <p class="card-title"><?= $actusJV_TITLE_firstThumb ?></p>
-                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_firstThumb ?></p>
-                    <p class="card-text"><?= $actusJV_TEXT_firstThumb ?></p>
-                </div>
-            </article>
-        </section>
-
-        <section class="col-lg-4 col-sm-12 justify-content-center">
-            <article class="card mb-3">
-                <div class="card-body">
-                    <!-- Là, à mon avis, faudra un if(isset(favorite)echo$favorite else actusmachintruc) -->
-                    <p class="card-title"><?= $actusJV_TITLE_firstThumb ?></p>
-                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_firstThumb ?></p>
-                    <p class="card-text"><?= $actusJV_TEXT_firstThumb ?></p>
-                </div>
-            </article>
-            <article class="card mb-3">
-                <div class="card-body">
-                    <p class="card-title"><?= $actusJV_TITLE_firstThumb ?></p>
-                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_firstThumb ?></p>
-                    <p class="card-text"><?= $actusJV_TEXT_firstThumb ?></p>
-                </div>
-            </article>
-            <article class="card mb-3">
-                <div class="card-body">
-                    <p class="card-title"><?= $actusJV_TITLE_firstThumb ?></p>
-                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_firstThumb ?></p>
-                    <p class="card-text"><?= $actusJV_TEXT_firstThumb ?></p>
-                </div>
-            </article>
-            <article class="card mb-3">
-                <div class="card-body">
-                    <p class="card-title"><?= $actusJV_TITLE_firstThumb ?></p>
-                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_firstThumb ?></p>
-                    <p class="card-text"><?= $actusJV_TEXT_firstThumb ?></p>
-                </div>
-            </article>
-            <article class="card mb-3">
-                <div class="card-body">
-                    <p class="card-title"><?= $actusJV_TITLE_firstThumb ?></p>
-                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_firstThumb ?></p>
-                    <p class="card-text"><?= $actusJV_TEXT_firstThumb ?></p>
-                </div>
-            </article>
-        </section>
-
-        <section class="col-lg-4 col-sm-12 justify-content-center">
-            <article class="card mb-3">
-                <div class="card-body">
-                    <!-- Là, à mon avis, faudra un if(isset(favorite)echo$favorite else actusmachintruc) -->
-                    <p class="card-title"><?= $actusJV_TITLE_firstThumb ?></p>
-                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_firstThumb ?></p>
-                    <p class="card-text"><?= $actusJV_TEXT_firstThumb ?></p>
-                </div>
-            </article>
-            <article class="card mb-3">
-                <div class="card-body">
-                    <p class="card-title"><?= $actusJV_TITLE_firstThumb ?></p>
-                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_firstThumb ?></p>
-                    <p class="card-text"><?= $actusJV_TEXT_firstThumb ?></p>
-                </div>
-            </article>
-            <article class="card mb-3">
-                <div class="card-body">
-                    <p class="card-title"><?= $actusJV_TITLE_firstThumb ?></p>
-                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_firstThumb ?></p>
-                    <p class="card-text"><?= $actusJV_TEXT_firstThumb ?></p>
-                </div>
-            </article>
-            <article class="card mb-3">
-                <div class="card-body">
-                    <p class="card-title"><?= $actusJV_TITLE_firstThumb ?></p>
-                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_firstThumb ?></p>
-                    <p class="card-text"><?= $actusJV_TEXT_firstThumb ?></p>
-                </div>
-            </article>
-            <article class="card mb-3">
-                <div class="card-body">
-                    <p class="card-title"><?= $actusJV_TITLE_firstThumb ?></p>
-                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_firstThumb ?></p>
-                    <p class="card-text"><?= $actusJV_TEXT_firstThumb ?></p>
+                    <p class="card-title"><?= $actusJV_TITLE_fifthThumb ?></p>
+                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_fifthThumb ?></p>
+                    <p class="card-text"><?= $actusJV_TEXT_fifthThumb ?></p>
                 </div>
             </article>
         </section>

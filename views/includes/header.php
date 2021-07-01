@@ -26,10 +26,16 @@
                         <a class="nav-link active" aria-current="page" href="#">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Darkmode</a>
+                        <a class="nav-link" href="parametres">Paramètres</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="parametres">Paramètres</a>
+                        <a class="nav-link" href="#">page1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">page2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">page3</a>
                     </li>
                 </ul>
             </div>

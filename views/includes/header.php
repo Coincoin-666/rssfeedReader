@@ -11,10 +11,10 @@
     <title>RSSReader</title>
 </head>
 
-<body>
+<body class="lightmode darkmode">
 
     <!-- Navigation -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="accueil">JeuxActuRSS<i class="fas fa-rss ms-2"></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,19 +23,19 @@
             <div class="collapse navbar-collapse" id="mobileNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                        <a class="nav-link active" aria-current="page" href="accueil">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="parametres">Paramètres</a>
+                        <a class="nav-link" href="/rssFeedReader/parametres">Paramètres</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">page1</a>
+                        <a class="nav-link" href="sujet1">page1</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">page2</a>
+                        <a class="nav-link" href="sujet2">page2</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">page3</a>
+                        <a class="nav-link" href="sujet3">page3</a>
                     </li>
                 </ul>
             </div>

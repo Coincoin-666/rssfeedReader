@@ -1,8 +1,8 @@
 <?php
+require "controllers/parameters-controller.php";
 require "controllers/index-controller.php";
 
 include "views/includes/header.php";
-session_start();
 ?>
 
 
@@ -31,51 +31,47 @@ session_start();
     <!-- END Carousel -->
 
     <!-- News Feed -->
-
-    <div class="container">
-        <section class="justify-content-center">
-            <article class="card mb-3" id="actus_JV_card_01">
-                <div class="card-header blue_PS_BG"></div>
-                <div class="card-body">
-                    <!-- Là, à mon avis, faudra un if(isset(favorite)echo$favorite else actusmachintruc) -->
-                    <p class="card-title"><?= $actusJV_TITLE_firstThumb ?></p>
-                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_firstThumb ?></p>
-                    <p class="card-text"><?= $actusJV_TEXT_firstThumb ?></p>
-                </div>
-            </article>
-            <article class="card mb-3" id="actus_JV_card_02">
-                <div class="card-header green_XB_BG"></div>
-                <div class="card-body">
-                    <p class="card-title"><?= $actusJV_TITLE_secondThumb ?></p>
-                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_secondThumb ?></p>
-                    <p class="card-text"><?= $actusJV_TEXT_secondThumb ?></p>
-                </div>
-            </article>
-            <article class="card mb-3" id="actus_JV_card_03">
-                <div class="card-header black_XB_BG"></div>
-                <div class="card-body">
-                    <p class="card-title"><?= $actusJV_TITLE_thirdThumb ?></p>
-                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_thirdThumb ?></p>
-                    <p class="card-text"><?= $actusJV_TEXT_thirdThumb ?></p>
-                </div>
-            </article>
-            <article class="card mb-3">
-                <div class="card-body">
-                    <p class="card-title"><?= $actusJV_TITLE_fourthThumb ?></p>
-                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_fourthThumb ?></p>
-                    <p class="card-text"><?= $actusJV_TEXT_fourthThumb ?></p>
-                </div>
-            </article>
-            <article class="card mb-3">
-                <div class="card-body">
-                    <p class="card-title"><?= $actusJV_TITLE_fifthThumb ?></p>
-                    <p class="card-subtitle"><?= $actusJV_SUBTITLE_fifthThumb ?></p>
-                    <p class="card-text"><?= $actusJV_TEXT_fifthThumb ?></p>
-                </div>
-            </article>
-        </section>
-    </div>
-
+    <section class="row w-60">
+        <h1 class="fs-2 text-uppercase">last news!</h1>
+        <?php
+        if (isset($_COOKIE["display_mode"])) {
+            if ($_COOKIE["display_mode"] == 6) {
+                for ($i = 1; $i < 7; $i++) {
+        ?>
+                    <article class="card mb-3">
+                        <div class="card-body">
+                            <p class="card-title"><?= $xml_actusJeuxVideos->channel->item[$i]->title ?></p>
+                            <p class="card-text"><?= $xml_actusJeuxVideos->channel->item[$i]->description ?></p>
+                        </div>
+                    </article>
+                <?php
+                }
+            } elseif ($_COOKIE["display_mode"] == 12) {
+                for ($i = 1; $i < 13; $i++) {
+                ?>
+                    <article class="card mb-3">
+                        <div class="card-body">
+                            <p class="card-title"><?= $xml_actusJeuxVideos->channel->item[$i]->title ?></p>
+                            <p class="card-text"><?= $xml_actusJeuxVideos->channel->item[$i]->description ?></p>
+                        </div>
+                    </article>
+                <?php
+                }
+            } else {
+                for ($i = 1; $i < 10; $i++) {
+                ?>
+                    <article class="card mb-3">
+                        <div class="card-body">
+                            <p class="card-title"><?= $xml_actusJeuxVideos->channel->item[$i]->title ?></p>
+                            <p class="card-text"><?= $xml_actusJeuxVideos->channel->item[$i]->description ?></p>
+                        </div>
+                    </article>
+        <?php
+                }
+            }
+        }
+        ?>
+    </section>
 </main>
 
 <!-- END Main Content -->

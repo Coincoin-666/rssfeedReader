@@ -1,0 +1,40 @@
+body {
+    /* tmp */
+    border: 1px solid green
+}
+
+main {
+    /* tmp */
+    border: 2px solid blueviolet;
+}
+
+/* Typographie */
+
+nav {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: #181818;
+    letter-spacing: -.02em;
+}
+
+h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    letter-spacing: -.02em;
+}
+
+/* Charte graphique JeuxActu.com */
+
+.jeuxactu_yellow_text {
+    color: #fbb700;
+}
+
+.jeuxactu_yellow_bg {
+    background-color: #fbb700;
+}

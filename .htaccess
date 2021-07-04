@@ -2,10 +2,13 @@ RewriteEngine on
 
 RewriteRule ^accueil$  index.php
 RewriteRule ^parametres$  views/parameters.php
-RewriteRule ^sujet1$  views/pages.php
-RewriteRule ^sujet2$  views/pages.php
-RewriteRule ^sujet3$  views/pages.php
-RewriteRule ^sujet4$  views/pages.php
-RewriteRule ^sujet5$  views/pages.php
+
+# Pour chaque page de favori il faudrait pouvoir mettre une fonction
+# Comme ça même l'URL est dynamique.
+RewriteRule ^hot$  views/pages.php
+RewriteRule ^ps4$  views/pages.php
+RewriteRule ^ps5$  views/pages.php
+RewriteRule ^xboxOne$  views/pages.php
+RewriteRule ^xbox_seriesX$  views/pages.php
 
 RewriteRule ^page-non-trouvee$  404.php

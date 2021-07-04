@@ -6,10 +6,12 @@ include "includes/header.php";
     <form action="/rssFeedReader/parametres" method="GET" class="row">
 
         <!-- Color Mode -->
-        <div class="col-lg-4 col-sm-12 form-check form-switch">
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="darkMode">
-                <label class="form-check-label" for="darkMode">Activer le mode Sombre</label>
+        <div class="col-lg-4 col-sm-12">
+            <div class="form-group">
+                <button class="btn btn-dark btn-outline-dark me-4" name="darkMode" id="darkMode"><i class="fas fa-moon grey-text"></i></button>
+                <label class="form-label" for="darkMode">Activer le mode Sombre</label>
+                <button class="btn btn-light btn-outline-light me-4" name="lightMode" id="lightMode"><i class="fas fa-sun grey-text"></i></button>
+                <label class="form-label" for="lightMode">Activer le mode Lumineux</label>
             </div>
         </div>
 

@@ -2,17 +2,13 @@
 AOS.init();
 
 // DarkMode Switcher
-if ($("#darkMode").checked) {
-    $("body").toggleClass("darkmode");
-    // $("body").removeClass("lightmode");
-    $("nav").toggleClass("navbar-dark");
-    // $("nav").removeClass("navbar-light");
-} else {
-    $("body").toggleClass("lightmode");
-    // $("body").removeClass("darkmode");
-    $("nav").toggleClass("navbar-light");
-    // $("nav").removeClass("navbar-dark");
-}
+$("#darkMode").click($("body").toggleClass("darkmode") && $("nav").toggleClass("navbar-dark"));
+// else {
+//     $("body").toggleClass("lightmode"),
+//     // $("body").removeClass("darkmode");
+//     $("nav").toggleClass("navbar-light"),
+//     // $("nav").removeClass("navbar-dark");
+// }
 // Dynamic Carousel Setting:
 // Le but serait de faire en sorte que chaque <carousel-item> soit 1 <card>
 // // Pour l'instant c'est manuel quand même.
